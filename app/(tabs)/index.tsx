@@ -15,23 +15,7 @@ import { useForm } from "react-hook-form";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { Picker } from "@react-native-picker/picker";
 
-/* Functionality:
-  ● Users can manage events on specific dates by clicking on the calendar.
-  ● Available actions:
 
-  ○ Create a new event – Enter an event name, set a time, and choose a repeat
-  option.
-  ○ Edit an existing event – Modify the name, repeat option, or time of an existing
-  event.
-  ○ Delete an event – Remove an event by clicking the delete button.
-  ● Repeat options:
-  ○ Weekly – The event recurs every week.
-  ○ Bi-weekly – The event recurs every other week.
-  ○ Monthly – The event recurs every month.
-  ● Users must click the “Save” button to confirm event creation.
-  ● Events should be stored locally so that past data is retained when the app is restarted.
-  ● Dates with scheduled events should be highlighted accordingly.
-*/
 export default function HomeScreen() {
 
 const INITIAL_DATE = Date.now();
